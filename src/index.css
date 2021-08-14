@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+:root{
+  --font1:"Zen Tokyo Zoo","cursive";
+  --font2:"'Crimson Text', serif";
+  --font3: "Otomanopee One";
+  --backg:#804d4d73;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+
+/* Nav Bar */
+
+.Nav-div{
+  padding: 50px 30px 0px 30px ;
+  display: flex;
+  flex-flow: row-wrap;
+  justify-content: space-between;
+  background-color: #645e5e41;
+}
+
+
+.Nav-div h1{
+  font-family: "Zen Tokyo Zoo","cursive";
+  font-weight: 600;
+
+}
+
+.Nav-div p{
+  font-family: 'Crimson Text', serif;
+  color: rgba(3, 3, 3, 0.59);
+  font-size: 18px;
+  margin-left:60px ;
+}
+
+
+.Nav-link a{
+  font-family: 'Crimson Text', serif;
+  padding:0 10px 0 10px ;
+  text-decoration: none;
+  border-right: 1px solid rgb(103, 99, 109) ;
+}
+
+.Nav-link{
+margin-right: 50px;
+}
+
+.Nav-link a{
+  color: black;
+}
+
+.active_class{
+  font-weight: bolder;
+
+}
+
+/* Nav Bar End */
+
+/* HOME PAGE */
+
+
+
+.Home-div{
+  padding-top:50px ;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #645e5e41;
+  height: 100%;
+}
+
+
+.image1 img{
+  filter: grayscale(200%);
+  transition: filter 1.5s ;
+  border-radius: 50%;
+
+}
+
+.image1 img:hover{
+  filter: grayscale(0);
+  cursor: pointer;
+  transition: 1.5s;
+}
+
+
+.intro{
+  margin-left: 100px;
+}
+
+.Home-div .intro h1{
+  font-family: 'Otomanopee One', sans-serif;
+  padding-top: 30px;
+  font-size: 85px;
+  color: black;
+}
+
+.Home-div .intro p{
+  margin-top: 30px;
+  font-family: var(--font2);
+  color: rgb(107, 95, 95);
+  font-size: 30px;
+
+}
+
+.Home-div .intro p span{
+  color: rgb(12, 10, 10);
+  font-family: monospace;
+}
+
+
+
+
+
+
+/* buttons in home */
+.Home-div .intro .buttons {
+  margin-top: 50px;
+
+}
+
+.Home-div .intro .buttons button {
+  border: 1px solid black;
+  width: 135px;
+  height: 135px;
+  margin-right: 50px;
+  border-radius: 50%;
+  font-family:'Crimson Text', serif;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: 0.8s;
+  text-decoration: none;
+}
+
+.Home-div .intro .buttons button[name = "Resume"]{
+  background-color: #ed3e15;
+}
+
+.Home-div .intro .buttons button[name = "Projects"]{
+  background-color: #fca106;
+}
+
+.Home-div .intro .buttons button[name = "Contact"]{
+  background-color: #1a8e9c;
+}
+
+.Home-div .intro .buttons button:hover{
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+
+/* FOOTER */
+.footer{
+  padding-top: 20px;
+  background-color: #645e5e41;
+}
+
+
+/* Projects */
+
+
+
+.project_div{
+  background-color: #645e5e41;   
+  display: flex;
+  justify-content: center;
+}
+
+.project_div h1{
+  padding:80px 80px;
+  font-family: ubuntu;
+}
+
+.project_div1{
+  display: flex;
+  justify-content: center; 
+
+}
+
+.card{
+  width: 80%;
+  background-color: #645e5e41;
+
+}
+
+.card-body{
+  background-color: #645e5e41;
+
+}
+
+.card button{
+  border: 1px solid black;
+  width: 135px;
+  height: 135px;
+  margin-right: 50px;
+  border-radius: 50%;
+  font-family:'Crimson Text', serif;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: #d43f44;
+  transition: 0.8s;
+}
+
+.card button:hover{
+background-color: transparent;
+transition: 0.5s;
+}
+
+
+/* Resume  and Contact*/ 
+
+
+
+.colum{
+  display: flex;
+  flex-direction: row;
+}
+
+.left_col{
+  width: 50%;
+}
+
+.right_col{
+  width: 50%;
+
+}
+
+
+button[name = "sumbit"]{
+  border: 1px solid black;
+  width: 135px;
+  height: 135px;
+  margin-right: 50px;
+  border-radius: 50%;
+  font-family:'Crimson Text', serif;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: #d43f44;
+  transition: 0.8s;
+}
+
+button:hover{
+background-color: transparent;
+transition: 0.5s;
+}
+
+@media all and (max-width: 500px){
+  .Nav-div{
+    padding: 40px 0px 0px 10px;
+  }
+  .Nav-div h1{
+    font-size: 20px;
+  }
+  .Nav-div p{
+    font-size: 14px;
+    margin-left: 30px;
+  }
+  .Nav-div a{
+    font-size: 15px;
+    padding: 0 5px 0 5px;
+  }
+  .image1 img{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+  }
+  .Home-div{
+    justify-content: center;
+  }
+  .intro{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+    display: block;
+    justify-content: center;
+    height: 100%;
+  }
+  .Home-div .intro h1{
+    width: 100%;
+    text-align: center;
+  }
+
+.Home-div .intro p{
+  text-align: center;
+  padding: auto;
+}
+.Home-div .intro .buttons button{
+  display: block;
+  width: 100%;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Home-div .intro .buttons{
+  justify-content: center;
+  display: block;
+}
+.footer{
+  display: none;
+}
+.img2{
+  width: 200px;
+  height: 200px;
+}
+.resumep{
+  padding-top: 0;
+  margin-top: -100px;
+}
+.contact-head{
+  width: 100%;
+  text-align: center;
+}
+.details{
+  width: 60%;
+  margin-right: 20px;
+}
+.contact-form{
+  width: 50%;
+}
+}
+
+@media all and (max-width: 700px){
+  .Nav-div{
+    padding: 40px 0px 0px 10px;
+  }
+  .Nav-div h1{
+    font-size: 20px;
+  }
+  .Nav-div p{
+    font-size: 14px;
+    margin-left: 30px;
+  }
+  .Nav-div a{
+    font-size: 15px;
+    padding: 0 5px 0 5px;
+  }
+  .image1 img{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+  }
+  .Home-div{
+    justify-content: center;
+  }
+  .intro{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+    display: block;
+    justify-content: center;
+    height: 100%;
+  }
+  .Home-div .intro h1{
+    width: 100%;
+    text-align: center;
+  }
+
+.Home-div .intro p{
+  text-align: center;
+  padding: auto;
+}
+.Home-div .intro .buttons button{
+  display: block;
+  width: 100%;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Home-div .intro .buttons{
+  justify-content: center;
+  display: block;
+}
+.img2{
+  width: 200px;
+  height: 200px;
+}
+.resumep{
+  padding-top: 0;
+  margin-top: -100px;
+}
+}
